@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Order Pizza</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1>Select from the menu below to order</h1>
+    </div>
+    <div class="container">
+      <!-- <div class="well"> -->
+        <form class="theForm">
+          <select class="form-control" id="pizzaTopping">
+            <option value="Extra_Cheese">Extra Cheese</option>
+            <option value="Pepperoni">Pepperoni</option>
+            <option value="Artichoke">Artichoke</option>
+          </select>
+          <select class="form-control" id="pizzaSize">
+            <option value="Small">Small Pizza</option>
+            <option value="Medium">Medium Pizza</option>
+            <option value="Large">Large Pizza</option>
+          </select>
+          <button id="submitFormButton" type="submit" class="btn">Submit</button>
+        </form>
+        <div class="myOrder">
+
+        </div>
+      <!-- </div> -->
+    </div>
+  </body>
+</html>
