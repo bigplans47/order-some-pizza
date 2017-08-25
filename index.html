@@ -9,27 +9,31 @@
   </head>
   <body>
     <div class="jumbotron">
-      <h1>Select from the menu below to order</h1>
+      <h1>Order Pizza Below</h1>
     </div>
     <div class="container">
-      <!-- <div class="well"> -->
+      <div class="well">
         <form class="theForm">
           <select class="form-control" id="pizzaTopping">
-            <option value="Extra_Cheese">Extra Cheese</option>
+            <option value="Extra Cheese">Extra Cheesy our #1 seller</option>
             <option value="Pepperoni">Pepperoni</option>
             <option value="Artichoke">Artichoke</option>
           </select>
           <select class="form-control" id="pizzaSize">
             <option value="Small">Small Pizza</option>
             <option value="Medium">Medium Pizza</option>
-            <option value="Large">Large Pizza</option>
+            <option value="XXL Large">Very Large Pizza</option>
           </select>
+          <div class="form-group">
+            <label for="customTopping1">Type in your custom topping</label>
+            <input id="customTopping" type="text" name="customTopping1">
+          </div>
           <button id="submitFormButton" type="submit" class="btn">Submit</button>
         </form>
-        <div class="myOrder">
-
+        <div class="finalOrder">
+          <p>Here are your order details: <span class="myOrder">TBD</span></p>
         </div>
-      <!-- </div> -->
+      </div>
     </div>
   </body>
 </html>
