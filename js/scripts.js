@@ -52,6 +52,8 @@ $(document).ready(function() {
     console.log(myPizza);
     pizzaArray.push(myPizza.rawPrice);
     console.log(pizzaArray);
+
+    // $(".orderArea").toggle();
     $(".myOrder").text(myPizza.topping+" "+myPizza.customTopping+" "+ myPizza.size+", "+myPizza.price+" ");
 
     // $(".myOrder").text(JSON.stringify(myPizza));
@@ -65,12 +67,16 @@ $(document).ready(function() {
     }
     $(".myTotalOrderPrice").text("Your Price is $"+totalPrice)
     $(".myTotalOrder").append("<li>"+myPizza.size+" "+myPizza.topping+" "+myPizza.customTopping+ "</li>");
-    // pizzaArray.forEach(function() {
-    //   totalPrice = pizzaArray.rawPrice;
-    // });
+    $(".orderMore").toggle();
+    $(".orderArea").toggle();
+  });
 
 
+  $(".orderMore").click(function() {
 
+    $(".orderArea").toggle();
+    $(".orderMore").toggle();
 
   });
+
 });
