@@ -1,7 +1,5 @@
 // back end
 var pizzaArray = [];
-
-
 function Pizza(topping1, size1) {
   this.topping = topping1;
   this.size = size1;
@@ -10,7 +8,6 @@ function Pizza(topping1, size1) {
   this.customTopping = "";
   this.customToppingPrice = 0;
 };
-
 Pizza.prototype.withCustomTopping = function(myCustomTopping) {
   if (myCustomTopping !== "") {
     this.customTopping = myCustomTopping;
@@ -19,7 +16,6 @@ Pizza.prototype.withCustomTopping = function(myCustomTopping) {
     this.customToppingPrice=0;
   }
 }
-
 Pizza.prototype.theCalculatedPrice = function(topping1, size1) {
   if ((topping1 === "Extra Cheese") || (topping1 === "Pepperoni") || (topping1 === "Veggie") || (topping1 === "Italian Sausage")) {
     this.rawPrice = this.price+ this.size.length+this.customToppingPrice;
@@ -30,9 +26,6 @@ Pizza.prototype.theCalculatedPrice = function(topping1, size1) {
     this.price = "$"+Number(this.price +1 +this.size.length+this.customToppingPrice).toFixed(2);
   }
 };
-
-
-
 // front end
 $(document).ready(function() {
   $(".theForm").submit(function(event) {
@@ -52,12 +45,7 @@ $(document).ready(function() {
     console.log(myPizza);
     pizzaArray.push(myPizza.rawPrice);
     console.log(pizzaArray);
-
-    // $(".orderArea").toggle();
     $(".myOrder").text(myPizza.topping+" "+myPizza.customTopping+" "+ myPizza.size+", "+myPizza.price+" ");
-
-    // $(".myOrder").text(JSON.stringify(myPizza));
-
     var totalPrice = 0
     for (var i = 0; i < pizzaArray.length; i++) {
       console.log(pizzaArray.length);
@@ -70,13 +58,8 @@ $(document).ready(function() {
     $(".orderMore").toggle();
     $(".orderArea").toggle();
   });
-
-
   $(".orderMore").click(function() {
-
     $(".orderArea").toggle();
     $(".orderMore").toggle();
-
   });
-
 });

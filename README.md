@@ -26,9 +26,9 @@ _{Behavior 1 (our program should handle):Taking user Input from dropdown menu or
   Input Example (When it receives):Veggie(price of 9), Veggie(price of 9)
   Output Example (It should return): Your price is $18
 
-  Behavior 4 (our program should handle):
-  Input Example (When it receives):
-  Output Example
+  Behavior 4 (our program should handle):After submitting a order asking user to add to order
+  Input Example (When it receives):A submit of 1 pizza
+  Output Example: It will show the order and a button below it to add to the order
   }_
 
 ## Known Bugs
