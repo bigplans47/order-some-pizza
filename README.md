@@ -1,6 +1,6 @@
 # _{Order Some Pizza}_
 
-#### _{The application allows the user to Order Pizza from Baileys}, {August 18th 2017}_
+#### _{The application allows the user to Order Pizza from Baileys}, {August 25th 2017}_
 
 #### By _**{Dan Kiss}**_
 
