@@ -1,3 +1,13 @@
+.jumbotron {
+  background-color: #CD5C5C;
+  padding-left: 50px;
+  border-radius: 20px;
+}
+
+#logo {
+  border-radius: 20%;
+}
+
 /*.jumbotron {
   color: #379683;
   background-color: #05386B;

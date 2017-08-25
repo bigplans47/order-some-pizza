@@ -5,11 +5,13 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Order Pizza</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Order Pizza from Bailey's</title>
   </head>
   <body>
     <div class="jumbotron">
-      <h1>Order Pizza Below</h1>
+      <img id="logo" src="img/baileys.jpeg" border-radius: 10px; alt="">
+      <h1>Order Below</h1>
     </div>
     <div class="container">
       <div class="well">
@@ -17,23 +19,27 @@
           <select class="form-control" id="pizzaTopping">
             <option value="Extra Cheese">Extra Cheesy our #1 seller</option>
             <option value="Pepperoni">Pepperoni</option>
+            <option value="Veggie">Veggie</option>
+            <option value="Italian Sausage">Italian Sausage</option>
             <option value="Artichoke">Artichoke</option>
           </select>
+          <br>
           <select class="form-control" id="pizzaSize">
             <option value="Small">Small Pizza</option>
             <option value="Medium">Medium Pizza</option>
             <option value="XXL Large">Very Large Pizza</option>
           </select>
+          <br>
           <div class="form-group">
-            <label for="customTopping1">Type in your custom topping</label>
+            <label for="customTopping1">Optional: Type in your custom topping</label>
             <input id="customTopping" type="text" name="customTopping1">
           </div>
-          <button id="submitFormButton" type="submit" class="btn">Submit</button>
+          <button id="submitFormButton" type="submit" class="btn btn-success">Submit</button>
         </form>
-        <div class="finalOrder">
+      </div>
+        <div class="finalOrder well success">
           <p>Here are your order details: <span class="myOrder">TBD</span></p>
         </div>
-      </div>
     </div>
   </body>
 </html>

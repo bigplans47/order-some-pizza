@@ -17,7 +17,7 @@ Pizza.prototype.withCustomTopping = function(myCustomTopping) {
 }
 
 Pizza.prototype.theCalculatedPrice = function(topping1, size1) {
-  if ((topping1 === "Extra Cheese") || (topping1 === "Pepperoni")) {
+  if ((topping1 === "Extra Cheese") || (topping1 === "Pepperoni") || (topping1 === "Veggie") || (topping1 === "Italian Sausage")) {
     this.price = "$"+Number(this.price+ this.size.length+this.customToppingPrice).toFixed(2);
     // +((this.customTopping.length)/2);
   } else if (topping1 === "Artichoke") {
@@ -35,8 +35,6 @@ $(document).ready(function() {
     console.log(mySize);
     var myCustomTopping = $("#customTopping").val();
     console.log(myCustomTopping);
-
-
     var myPizza = new Pizza(myTopping, mySize);
     console.log(myPizza);
     myPizza.withCustomTopping(myCustomTopping);
