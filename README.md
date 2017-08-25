@@ -22,9 +22,9 @@ _{Behavior 1 (our program should handle):Taking user Input from dropdown menu or
   Input Example (When it receives):Veggie, Small Pizza, Custom Topping of Peppers
   Output Example (It should return):The cost is $12.00
 
-  Behavior 3 (our program should handle):
-  Input Example (When it receives):
-  Output Example (It should return):
+  Behavior 3 (our program should handle):The price of multiple pizzas
+  Input Example (When it receives):Veggie(price of 9), Veggie(price of 9)
+  Output Example (It should return): Your price is $18
 
   Behavior 4 (our program should handle):
   Input Example (When it receives):
